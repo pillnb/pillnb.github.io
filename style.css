@@ -1,0 +1,23 @@
+.nav-link {
+    transition:all 0.2s;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-property: all;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about {
+    background: #be9a9a;
+    align-items: center;
+}
+
+.start {
+    background: #47ab86;
+    align-items: center;
+}
