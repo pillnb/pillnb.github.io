@@ -13,11 +13,16 @@
 }
 
 .about {
-    background: #e1dfcd;
+    background: #e8e7de;
     align-items: center;
 }
 
 .start {
-    background: #000000;
+    background: #141414;
     align-items: center;
 }
+
+img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; } 
