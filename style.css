@@ -1,10 +1,30 @@
-.nav-link {
-    transition:all 0.2s;
-    transition-duration: 0.2s;
-    transition-timing-function: ease;
-    transition-property: all;
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-family: Poppins;
 }
 
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+nav {
+    width: 100%;
+    color: #e1e1e1;
+}
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+h1 {
+    color: #e1e1e1;
+}
+
+.judul {
+    font-size: 55px ;
+}
 .row {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
@@ -13,16 +33,152 @@
 }
 
 .about {
-    background: #e8e7de;
     align-items: center;
 }
 
 .start {
-    background: #141414;
+    background: #000000;
     align-items: center;
+    padding-top: 45px;
 }
+
+#collection {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Style the card background to be black */
+#collection .card {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    border: none; /* Remove the default border */
+}
+#collectionCard {
+    max-width: 400px; /* Set the maximum width of the carousel */
+    margin: 0 auto; /* Center the carousel */
+  }
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .card img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .card {
+    margin: 0 0.5em;
+    border: none;
+    border-radius: 0;
+    
+  }
+  
+  .collection > .carousel-inner {
+    padding: 1em;
+  }
+
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 
 img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; } 
+
+footer {
+    padding: 4em 0em;
+    background: #000;
+    color:#e1e1e1;
+}
+
+form {
+    padding-bottom: 20px;
+    color:#e1e1e1;
+
+}
+
+#start .white-outline-button {
+    margin-left: 10px;
+}
+
+/* Style for buttons with white outline */
+.white-outline-button {
+    background-color: transparent;
+    border-radius: 0px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 8px;
+}
+
+/* Style the buttons on hover */
+.white-outline-button:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+  
+
+/* Style all buttons with white outline and transparent background */
+.black-btn {
+    background-color: black;
+    border-radius: 0px;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+}
+
+/* Style the buttons on hover */
+.black-btn:hover {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+}
+
+
+/* Style the email input to have a white outline and less rounded */
+#eemail{
+    border: 2px solid white;
+    border-radius: 0; /* Remove the border radius to make it less rounded */
+    color: white;
+}
+
+/* Style the subscribe button to be white */
+.footer-email button {
+    background-color: white;
+    color: black; /* Change the text color to black or your preferred color */
+    border-radius: 0; /* Remove the border radius to make it less rounded */
+}
+
+/* Style the subscribe button on hover */
+.footer-email button:hover {
+    background-color: black; /* Change the background color on hover */
+    color: white; /* Change the text color on hover */
+}
+
+/* Style the carousel captions */
+.carousel-caption {
+    color: #fff; /* Text color */
+    text-align: left; /* Align text to the left */
+    padding: 10px; /* Add padding for better readability */
+    left: 20%;
+    bottom: 20%;
+}
+  
+  .carousel-caption h3 {
+    font-size: 2em; /* Increase the font size for the title */
+    margin-bottom: 0.2em; /* Add some spacing between title and description */
+  }
+  
+  .carousel-caption p {
+    font-size: 0.8em; /* Increase the font size for the description */
+  }
