@@ -5,20 +5,21 @@ body{
     font-family: Poppins;
 }
 nav {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
     color: #e1e1e1;
-    box-shadow: 1px 5px 6px 0 rgba(22, 22, 26, 0.18);
+    box-shadow: 5px 5px 6px 0 rgba(22, 22, 26, 0.18);
 }
 .nav-link {
     color: white;
 }
 
 .nav-link:hover {
-    color: aqua;
+    color: rgb(250, 235, 199);
 }
-h1 {
+#start h1 {
     color: #ffffff;
+    font-weight: bold;
 }
 .judul {
     font-size: 55px ;
@@ -190,7 +191,7 @@ footer .email{
   }
 
   #login {
-    background-color:rgb(0, 0, 0);
+    background-color: rgb(245, 245, 240);
     color: black;
   }
 
@@ -230,4 +231,37 @@ footer .email{
   #login h5 {
     margin-top: 5px;
     margin-bottom: 20px;
+  }
+
+  #login input {
+    font-size: 15px;
+  }
+
+  .fa {
+    font-size: 40px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .fa:hover {
+    color: #f1e3e3;
+  }
+
+  .sosmed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 50px;
+  }
+
+  .icon {
+    margin-top: 20px;
   }
