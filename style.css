@@ -43,12 +43,24 @@ nav {
 
 /* Story Section Styles */
 #story {
+  background-color: rgb(245, 245, 240);
   padding: 70px 0 50px;
 }
 
 #story h2 {
   margin-bottom: 20px;
 }
+
+#story img {
+  padding: 20px;
+  width: 400px;
+}
+
+.animate__animated {
+  animation-duration: 300s;
+  animation-iteration-count: infinite;
+}
+
 
 /* Collection Section Styles */
 #collection {
