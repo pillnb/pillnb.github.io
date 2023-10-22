@@ -6,6 +6,7 @@ const passwordInput = document.getElementById('password');
 const dateInput = document.getElementById('date');
 const nrpInput = document.getElementById('nrp');
 
+
 form.addEventListener('submit', function (e) {
     let isValid = true;
 
@@ -28,7 +29,7 @@ form.addEventListener('submit', function (e) {
         isValid = false;
     }
 
-    // Validate Birth Date (You can add your own validation logic)
+    // Validate Birth Date
     if (dateInput.value.trim() === '') {
         alert('Birth Date is required');
         isValid = false;
@@ -41,6 +42,6 @@ form.addEventListener('submit', function (e) {
     }
 
     if (!isValid) {
-        e.preventDefault(); // Prevent form submission
+        e.preventDefault(); // jika ada salah satu yang tdk valid, maka tdk bisa submit
     }
 });
