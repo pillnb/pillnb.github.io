@@ -1,267 +1,308 @@
 html {
-    scroll-behavior: smooth;
-  }
-body{
-    font-family: Poppins;
+  scroll-behavior: smooth;
 }
+
+body {
+  font-family: Poppins;
+}
+
+/* Navigation Bar Styles */
 nav {
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    color: #e1e1e1;
-    box-shadow: 5px 5px 6px 0 rgba(22, 22, 26, 0.18);
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  color: #e1e1e1;
+  box-shadow: 5px 5px 6px 0 rgba(22, 22, 26, 0.18);
 }
+
 .nav-link {
-    color: white;
+  color: white;
 }
 
 .nav-link:hover {
-    color: rgb(250, 235, 199);
+  color: rgb(250, 235, 199);
 }
+
+/* Start Section Styles */
+#start {
+  background: #000000;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #start h1 {
-    color: #ffffff;
-    font-weight: bold;
-}
-.judul {
-    font-size: 55px ;
-}
-.row {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-.start {
-    background: #000000;
-    align-items: center;
-    padding-top: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 55px;
 }
 
-.start img {
-    width: 105%;
+#start img {
+  width: 110%;
 }
 
+/* Story Section Styles */
 #story {
- padding-top: 70px;
- padding-bottom: 50px;
+  padding: 70px 0 50px;
 }
+
 #story h2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
+
+/* Collection Section Styles */
 #collection {
-    background-color: rgb(245, 245, 240);
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 40px 0;
+  background-color: rgb(245, 245, 240);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 40px 0;
 }
+
 #collection h1 {
-    color: #1c1c1c;
-    font-size: 40px;
-    font-style: italic;
-    letter-spacing: 0.1em;
-    margin: 20px;
-    font-weight:bold;
+  color: #1c1c1c;
+  font-size: 40px;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  margin: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
-/* Style the card background to be black */
+
+/* Card Styles in Collection */
 #collection .card {
-    background-color: rgb(255, 255, 255);
-    color: #000;
-    border: none; /* Remove the default border */
-    border-radius: 1rem 1rem 1rem 1rem;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  border: none;
+  border-radius: 1rem;
 }
+
 #collectionCard {
-    max-width: 400px; /* Set the maximum width of the carousel */
-    margin: 0 auto; /* Center the carousel */
-  }
+  max-width: 400px;
+  margin: 0 auto;
+}
 
-  .cards-wrapper {
-    display: flex;
-    justify-content: center;
-  }
-  .card img {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  .card {
-    margin: 0 0.5em;
-    box-shadow: 1px 4px 4px 0 rgba(22, 22, 26, 0.18);
-    border: none;
-    border-radius: 0;
-  }
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
 
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
 
-  #collection .carousel-inner {
-    padding: 1em;
-  }
-  .carousel-control-prev,
-  .carousel-control-next {
-    background-color: #00000033;
-    width: 5vh;
-    height: 5vh;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+.card {
+  margin: 0 0.5em;
+  box-shadow: 1px 4px 4px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+}
 
+#collection .carousel-inner {
+  padding: 1em;
+}
 
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #00000033;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Footer Styles */
 footer {
-    padding: 4em 0em;
-    background: #000000;
-    color:#e1e1e1;
+  padding: 4em 0em;
+  background: #000000;
+  color: #e1e1e1;
 }
 
-#start .white-outline-button {
-    margin-left: 10px;
-}
-
-/* Style for buttons with white outline */
+/* White Outline Button Styles */
 .white-outline-button {
-    background-color: transparent;
-    border-radius: 0px;
-    color: rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
-    padding: 8px;
+  background-color: transparent;
+  border-radius: 0;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 8px;
 }
 
-/* Style the buttons on hover */
 .white-outline-button:hover {
-    background-color: white;
-    color: rgb(0, 0, 0);
+  background-color: white;
+  color: rgb(0, 0, 0);
 }
-  
 
-/* Style all buttons with white outline and transparent background */
+/* Black Button Styles */
 .black-btn {
-    background-color: black;
-    border-radius: 0px;
-    color: rgb(255, 255, 255);
-    border: 2px solid rgb(0, 0, 0);
+  background-color: black;
+  border-radius: 0;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
 }
 
-/* Style the buttons on hover */
 .black-btn:hover {
-    background-color: transparent;
-    color: rgb(0, 0, 0);
-    border: 2px solid rgb(0, 0, 0);
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
 }
 
-
-/* Style the email input to have a white outline and less rounded */
-footer .email{
-    border: 1px solid rgb(255, 255, 255);
-    background-color: transparent;
-    border-radius: 0; /* Remove the border radius to make it less rounded */
-    color: rgb(255, 255, 255);
+/* Email Input and Button Styles */
+footer .email {
+  border: 1px solid rgb(255, 255, 255);
+  background-color: transparent;
+  border-radius: 0;
+  color: rgb(255, 255, 255);
 }
 
-/* Style the subscribe button to be white */
 .footer-email button {
-    background-color: white;
-    color: black; /* Change the text color to black or your preferred color */
-    border-radius: 0; /* Remove the border radius to make it less rounded */
+  background-color: white;
+  color: black;
+  border-radius: 0;
 }
 
-/* Style the subscribe button on hover */
 .footer-email button:hover {
-    background-color: black; /* Change the background color on hover */
-    color: white; /* Change the text color on hover */
+  background-color: black;
+  color: white;
 }
 
-.copyright p{
-    margin-top: 50px;
-}
-
-/* Style the carousel captions */
+/* Carousel Caption Styles */
 .carousel-caption {
-    color: #fff; /* Text color */
-    text-align: left; /* Align text to the left */
-    padding: 10px; /* Add padding for better readability */
-    left: 20%;
-    bottom: 20%;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+  left: 20%;
+  bottom: 20%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-  
-  .carousel-caption h3 {
-    font-size: 2em; /* Increase the font size for the title */
-    margin-bottom: 0.2em; /* Add some spacing between title and description */
-    font-weight: 550;
+
+.carousel-caption h3 {
+  font-size: 2em;
+  margin-bottom: 0.2em;
+  font-weight: 550;
 }
-  
-  .carousel-caption p {
-    font-size: 0.8em; /* Increase the font size for the description */
-  }
 
-  #login {
-    background-color: rgb(245, 245, 240);
-    color: black;
-  }
+.carousel-caption p {
+  font-size: 0.8em;
+}
 
-  #login .login-image {
-    border-radius: 1rem;
-  }
-  #login .card {
-    border-radius: 1rem;
-  }
+/* Login Section Styles */
+#login {
+  background-color: rgb(245, 245, 240);
+  color: black;
+}
 
-  #login .form-outline {
-    margin-bottom: 10px;
-  }
+#login .login-image {
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+}
 
-  #login .form-label {
-    color: #000;
-  }
+#login .card {
+  border-radius: 1rem;
+}
 
-  #login .form-control {
-    background-color: #ffffff;
-  }
+#login .form-outline {
+  margin-bottom: 10px;
+}
 
-  #login .form-btn {
-    background-color: #f3ebeb;
-    margin-top: 30px;
-  }
-  #login .form-btn:hover {
-    background-color:#e6d7d7;
-  }
+#login .form-label {
+  color: #000;
+}
 
-  #login h1 {
-    font-weight: bold;
-    font-size: 40px;
-    color: #000;
-  }
+#login .form-control {
+  background-color: #ffffff;
+}
 
-  #login h5 {
-    margin-top: 5px;
-    margin-bottom: 20px;
-  }
+#login .form-btn {
+  background-color: #f3ebeb;
+  margin-top: 30px;
+}
 
-  #login input {
-    font-size: 15px;
-  }
+#login .form-btn:hover {
+  background-color: #e6d7d7;
+}
 
-  .fa {
-    font-size: 40px;
-    width: 35px;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    margin-bottom: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+#login h1 {
+  font-weight: bold;
+  font-size: 40px;
+  color: #000;
+}
 
-  .fa:hover {
-    color: #f1e3e3;
-  }
+#login h5 {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
 
-  .sosmed {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 100px;
-    margin-top: 50px;
-  }
+#login input {
+  font-size: 15px;
+}
 
-  .icon {
-    margin-top: 20px;
-  }
+/* Social Media Icon Styles */
+.fa {
+  font-size: 40px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.fa:hover {
+  color: #f1e3e3;
+}
+
+.sosmed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.icon {
+  margin-top: 20px;
+}
+
+/* Community Section Styles */
+#community {
+  background-color: rgb(245, 245, 240);
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  transform: translate(0, 50%);
+  text-align: right;
+  color: white;
+}
+
+.community-button:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.community-button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 8px;
+}
+
+.community-image {
+  width: 100%;
+  display: block;
+  border-radius: 1rem;
+  box-shadow: 1px 4px 4px 0 rgba(22, 22, 26, 0.18);
+}
+
+.text {
+  margin-bottom: 30px;
+}
